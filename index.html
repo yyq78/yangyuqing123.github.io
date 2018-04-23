@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta name="_csrf" th:content="${_csrf.token}"/>
+    <meta name="_csrf_header" th:content="${_csrf.headerName}"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>facecheck</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!--css-->
+    <link href="faceCheck.css" rel="stylesheet"/>
+
+</head>
+<body>
+<div class="container">
+    <div class="jumbotron">
+        <h1>人脸检测</h1>
+        <p>考虑到系统本身的安全因素和方便人员管理，我们需要您在这里拍下您的照片，以便于注册登记您的信息或在登录验证您的身份</p>
+
+        <div class="panel panel-danger">
+            <div class="panel-heading">摄像区<span class="glyphicon glyphicon-camera"></span></div>
+            <div class="panel-body">
+                <p  class="text-center">请尽量将面部全部呈现在相框中</p>
+            </div>
+            <div id="picture">
+                <div>
+                    <video src="" preload="preload" width="400" height="400" id="video" autoplay></video>
+                    <canvas id="canvas" width="300" height="350"></canvas>
+                </div>
+            </div>
+            <div class="text-center">
+                <button type="button" id="snap" class="btn  btn-lg btn-primary">准备好了就确认</button>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<div class="foot">
+    <p class="text-center">Copyright &copy; 2018 智能外包管理平台. All Rights Reserved | Design by <span>杨玉卿&张海洋&田宇</span></p>
+</div>
+<!--jquery-->
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<!--jquery:cookie-->
+<script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+<!--js-->
+<script src="login_faceCheck.js"></script>
+
+</body>
+</html>

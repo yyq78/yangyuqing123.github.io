@@ -1,0 +1,21 @@
+#picture,.box{
+    text-align:center;
+}
+#canvas{
+    display:none;
+    /*width:100px;*/
+    /*height:100px;*/
+    /*border-radius:50px;*/
+}
+#video{
+    /*width:100px;*/
+    /*height:100px;*/
+    /*border-radius:50px;*/
+}
+.box{
+    margin-bottom:10px;
+}
+
+
+
+
