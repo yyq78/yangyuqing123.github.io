@@ -8,6 +8,9 @@
     /*border-radius:50px;*/
 }
 #video{
+    border:1px dashed black;
+    width:50%;
+    height:70%;
     /*width:100px;*/
     /*height:100px;*/
     /*border-radius:50px;*/
